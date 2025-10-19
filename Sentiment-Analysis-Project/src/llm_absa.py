@@ -5,7 +5,7 @@ from src.base import ABSAAnalyzer, AspectSentiment
 
 
 class LLMABSA(ABSAAnalyzer):
-    def __init__(self, model="llama3"):
+    def __init__(self, model="llama2"):
         self.model = model
 
     def analyze(self, text: str) -> List[AspectSentiment]:

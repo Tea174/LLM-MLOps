@@ -7,7 +7,10 @@ import spacy
 
 class TransformerABSA(ABSAAnalyzer):
     def __init__(self, model_name="yangheng/deberta-v3-base-absa-v1.1"):
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+        self.tokenizer = AutoTokenizer.from_pretrained(
+            model_name,
+            use_fast=False
+        )
         self.model = AutoModelForSequenceClassification.from_pretrained(model_name)
         self.model.eval()
 

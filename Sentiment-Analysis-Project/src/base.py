@@ -12,8 +12,7 @@ class AspectSentiment:
     text_span: Optional[Tuple[int, int]] = None
 
     def __str__(self):
-        return f"Aspect: '{self.aspect}' → Sentiment: {sentiment.upper()} (confidence: {self.confidence:.2f})"
-
+        return f"Aspect: '{self.aspect}' → Sentiment: {self.sentiment.upper()} (confidence: {self.confidence:.2f})"
 
 class ABSAAnalyzer(ABC):
     """Base class/interface for all ABSA implementations"""
