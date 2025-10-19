@@ -1,2 +1,3 @@
 - Started DVC 
 - Run Dockerfile locally but not enough resource. I will try to run it again in my other laptop and together with actions Github.
+- The whole project is too big so i just uploaded these files. 
