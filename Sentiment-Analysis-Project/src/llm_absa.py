@@ -25,6 +25,7 @@ class LLMABSA(ABSAAnalyzer):
             print(f"Error: {e}")
             return []
 
+
     def _create_prompt(self, text: str) -> str:
         prompt = f"""You are an aspect-based sentiment analyzer. Analyze the following text and extract:
 1. All aspects (features, entities, topics) mentioned
